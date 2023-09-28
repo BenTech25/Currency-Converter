@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  align-items: center;
+  background: #26946c;
+  font-family: "Press Start 2P", sans-serif;
+  color: #fff
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline:0;
+  box-shadow: none;
+  border: 0!important;
+  background: #000512;
+  background-image: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.bloc {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #c7c2c2;
+  overflow: hidden;
+  border-radius: .25em;
+
+}
+
+.title {
+  text-shadow: 1px 1px 2px #000512;
+}
+
+
+#centered {
+  margin: 10%;
+  margin-bottom: 5%;
+  border: 4mm ridge #000512;
+  padding: 5%;
+  width: 450px;
+  height: 300px
+}
+ 
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Press Start 2P", sans-serif;
+
+}
+
+.bloc::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #15885c;
+  cursor: pointer;
+  pointer-events: none;
+  transition: .25s all ease;
+}
+
+.bloc:hover::after {
+  color: #5e7069;
+  
+}
+
+.amount {
+  margin-top: 5%;
+}
+
+
+.displayed {
+  margin-top: 5%;
+  color: #000512;
+}
+
+.space {
+  margin-top: 5%;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  background-color: #000512;
+  color: #e7e2e2;
+}

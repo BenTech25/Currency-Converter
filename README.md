@@ -1,1 +1,2 @@
-# Currency-Converter
+clone your repository
+run "npm -i"
